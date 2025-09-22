@@ -33,30 +33,30 @@
 
 .mmm-dispcurval-value-line {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    font-size: 0.9em; /* Smaller font size for the value line */
+    font-size: 0.9em;
 }
 
 .mmm-dispcurval-title {
     font-weight: normal;
     text-align: left;
-    flex-grow: 1; /* Allows the title to take up remaining space */
+    min-width: 200px; /* Aligns all values after the longest title */
+    flex-shrink: 0;
 }
 
 .mmm-dispcurval-value {
     font-weight: bold;
     font-size: 1.1em;
     color: #f39c12; /* A color that stands out */
-    text-align: right;
-    margin-left: 10px; /* Space between title and value */
+    text-align: left;
+    margin-left: 10px;
 }
 
 .mmm-dispcurval-unit {
     font-weight: normal;
     font-size: 0.9em;
     color: #eee;
-    text-align: right;
+    text-align: left;
     margin-left: 5px;
 }
